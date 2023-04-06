@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+[class*="col-"] {
+  float: left;
+  padding: 15px;
+}
+
+html {
+  font-family: "Lucida Sans", sans-serif;
+}
+
+.header {
+  background-color: #683113;
+  color: #fff;
+  padding: 15px;
+}
+
+.menu ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu li {
+  padding: 8px;
+  margin-bottom: 7px;
+  background-color: #c15a07;
+  color: #ffffff;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+.menu li:hover {
+  background-color: #f0c7aa;
+}
+
+.aside {
+  background-color: #eb8c4a;
+  padding: 15px;
+  color: #ffffff;
+  text-align: center;
+  font-size: 15px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+.footer {
+  background-color: #683105;
+  color: #ffffff;
+  text-align: center;
+  font-size: 15px;
+  padding: 15px;
+}
+
+@media only screen and (min-width: 600px) {
+  /* For tablets: */
+  .col-s-1 {width: 8.33%;}
+  .col-s-2 {width: 16.66%;}
+  .col-s-3 {width: 25%;}
+  .col-s-4 {width: 33.33%;}
+  .col-s-5 {width: 41.66%;}
+  .col-s-6 {width: 50%;}
+  .col-s-7 {width: 58.33%;}
+  .col-s-8 {width: 66.66%;}
+  .col-s-9 {width: 75%;}
+  .col-s-10 {width: 83.33%;}
+  .col-s-11 {width: 91.66%;}
+  .col-s-12 {width: 100%;}
+}
+@media only screen and (min-width: 768px) {
+  /* For desktop: */
+  .col-1 {width: 8.33%;}
+  .col-2 {width: 16.66%;}
+  .col-3 {width: 25%;}
+  .col-4 {width: 33.33%;}
+  .col-5 {width: 41.66%;}
+  .col-6 {width: 50%;}
+  .col-7 {width: 58.33%;}
+  .col-8 {width: 66.66%;}
+  .col-9 {width: 75%;}
+  .col-10 {width: 83.33%;}
+  .col-11 {width: 91.66%;}
+  .col-12 {width: 100%;}
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>Recommended restaurants in Indy</h1>
+</div>
+
+<div class="row">
+  <div class="col-3 col-s-3 menu">
+    <ul>
+      <li>อาหารจานหลัก</li>
+      <li>อาหารทานเล่น</li>
+      <li>เครื่องดื่ม</li>
+      <li>ของหวาน</li>
+    </ul>
+  </div>
+
+  <div class="col-6 col-s-9">
+    <h1>INDY</h1>
+    <p>ร้านอาหารแนะนําในตลาดอินดี้ โดยพวกเรานักศึกษามหาวิทยาลัยศิลปากรได้จัดทําขึ้น เพื่อแนะนําร้านอาหารอร่อยในตลาดอินดี้มหาวิทยาลัยศิลปากร</p>
+  </div>
+  
+  <div class="col-3 col-s-12">
+    <div class="aside">
+      <h2>อาหารหลากหลายในอินดี้</h2>
+      <p>ตลาดอินดี้แหล่งรวมอาหารหลากหลายน่าทาน</p>
+    </div>
+  </div>
+</div>
+
+<div class="footer">
+  <h1> ร้านแนะนํา</h1>
+</div>
+
+</body>
+</html>
+  <html>
+  <head>
+    <title>Image Layout Example</title>
+    <style>
+      .image {
+        float: left;
+        width: 100%;
+      }
+      .clear {
+        clear: both;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="image">
+     <p align="center">
+       <img src="./img/holybasilrice.jpg" alt="Photo by Manuel Meza" style="width:50%">
+       <h2 align="center" class="w3-wide w3-center"> ร้านข้าวกะเพราเด็ด </h2>
+     </p>  
+    </div>
+
+    <div class="image">
+     <p align="center">
+        <img src="./img/omelet rice1.jpg" alt="Photo by Manuel Meza" style="width:50%">
+        <h2 align="center" class="w3-wide w3-center"> ร้านข้าวไข่เจียวทรงเครื่อง </h2>
+     </p>
+    </div>
+
+    <div class="image">
+     <p align="center">
+        <img src="./img/chicken.jpg" alt="Photo by Manuel Meza" style="width:50%">
+        <h2 align="center" class="w3-wide w3-center"> ร้านบังเบียร์ ไก่บิน </h2>
+     </p>
+    </div>
+
+    <div class="image">
+     <p align="center">
+        <img src="./img/porklegrice.jpg" alt="Photo by Manuel Meza" style="width:50%">
+        <h2 align="center" class="w3-wide w3-center"> ร้านข้าวขาหมู </h2>
+     </p>
+    </div>
+
+    <div class="image">
+     <p align="center">
+        <img src="./img/roast pork.jpg" alt="Photo by Manuel Meza" style="width:50%">
+        <h2 align="center" class="w3-wide w3-center"> ร้านยกนิ้ว </h2>
+     </p>
+    </div>
+
+    <div class="image">
+     <p align="center">
+        <img src="./img/meatball.jpg" alt="Photo by Manuel Meza" style="width:50%">
+        <h2 align="center" class="w3-wide w3-center"> ร้านลูกชิ้น </h2>
+     </p>
+    </div>
+
+    <div class="image">
+     <p align="center">
+        <img src="./img/grilled meatballs.jpg" alt="Photo by Manuel Meza" style="width:50%">
+        <h2 align="center" class="w3-wide w3-center"> ร้านลูกชิ้นปิ้ง </h2>
+     </p>
+    </div>
+
+    <div class="image">
+     <p align="center">
+        <img src="./img/Mild Fuit Milk.jpg" alt="Photo by Manuel Meza" style="width:50%">
+        <h2 align="center" class="w3-wide w3-center"> ร้าน Mild Fuit & Milk </h2>
+     </p>
+    </div>
+
+    <div class="image">
+     <p align="center">
+        <img src="./img/spicy chicken.jpg" alt="Photo by Manuel Meza" style="width:50%">
+        <h2 align="center" class="w3-wide w3-center"> ร้านไก่แซ่บ AFC ชิคเก้นแม้ก </h2>
+     </p>
+    </div>
+
+    <div class="image">
+     <p align="center">
+        <img src="./img/roti.jpg" alt="Photo by Manuel Meza" style="width:50%">
+        <h2 align="center" class="w3-wide w3-center"> ร้านโรตีมะตะมะ </h2>
+     </p>
+    </div>
+
+    <div class="image">
+     <p align="center">
+        <img src="./img/fruit1.jpg" alt="Photo by Manuel Meza" style="width:50%">
+        <h2 align="center" class="w3-wide w3-center"> ร้านน้ำผลไม้สดปั่น </h2>
+     </p>
+    </div>
+
+    <div class="image">
+     <p align="center">
+        <img src="./img/tokyo.jpg" alt="Photo by Manuel Meza" style="width:50%">
+        <h2 align="center" class="w3-wide w3-center"> ร้านขนมโตเกียว </h2>
+     </p>
+    </div>
+
+    <div class="image">
+     <p align="center">
+        <img src="./img/french fries.jpg" alt="Photo by Manuel Meza" style="width:50%">
+        <h2 align="center" class="w3-wide w3-center"> ร้านเฟรนฟรายเขย่า </h2>
+     </p>
+    </div>
+
+    <div class="image">
+     <p align="center">
+        <img src="./img/pancakes.jpg" alt="Photo by Manuel Meza" style="width:50%">
+        <h2 align="center" class="w3-wide w3-center"> ร้านมีตัง ขนมเบื้อง </h2>
+     </p>
+    </div>
+
+    <div class="image">
+     <p align="center">
+        <img src="./img/langwangkitchen.jpg" alt="Photo by Manuel Meza" style="width:50%">
+        <h2 align="center" class="w3-wide w3-center"> ร้านครัวหลังวัง </h2>
+     </p>
+    </div>
+
+    <div class="image">
+     <p align="center">
+        <img src="./img/soy milk.jpg" alt="Photo by Manuel Meza" style="width:50%">
+        <h2 align="center" class="w3-wide w3-center"> ร้านน้ำเต้าหู้เพื่อสุขภาพ </h2>
+     </p>
+    </div>
+
+    <div class="image">
+     <p align="center">
+        <img src="./img/ink.jpg" alt="Photo by Manuel Meza" style="width:50%">
+        <h2 align="center" class="w3-wide w3-center"> ร้านวัฒน์ หมึกย่าง </h2>
+     </p>
+    </div>
+
+    <div class="image">
+     <p align="center">
+        <img src="./img/grilled pork sticky rice.jpg" alt="Photo by Manuel Meza" style="width:50%">
+        <h2 align="center" class="w3-wide w3-center"> ร้านข้าวเหนียว-หมูปิ้งรวมรส </h2>
+     </p>
+    </div>
+
+    <div class="image">
+     <p align="center">
+        <img src="./img/bread1.jpg" alt="Photo by Manuel Meza" style="width:50%">
+        <h2 align="center" class="w3-wide w3-center"> ร้านขนมปังปิ้ง By พี่ฟ้า </h2>
+     </p>
+    </div>
+          
+    <div class="image">
+     <p align="center">
+        <img src="./img/Dessert.jpg" alt="Photo by Manuel Meza" style="width:50%">
+        <h2 align="center" class="w3-wide w3-center"> ร้านขนมหวาน </h2>
+     </p>
+    </div>
+    <div class="clear"></div>
+  </body>
+</html>
